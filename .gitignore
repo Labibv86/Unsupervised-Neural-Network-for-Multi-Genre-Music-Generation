@@ -179,7 +179,7 @@ outputs/task3_samples/*.npy
 outputs/rlhf_survey/*.npy
 outputs/rlhf_comparison/*.npy
 outputs/baseline_samples/*.npy
-outputs/figures/
+
 
 # Evaluation results (optional, but can be committed as JSON)
 # outputs/*.json is small, can keep
