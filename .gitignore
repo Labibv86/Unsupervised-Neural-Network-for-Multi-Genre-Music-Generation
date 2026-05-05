@@ -62,14 +62,20 @@ data/processed/
 *.mid
 *.MID
 *.midi
-*.npy
+.npy
 *.npz
 *.json
 
 # ============================================
 # Generated Outputs (DO NOT COMMIT)
 # ============================================
-
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.pkl
+*.h5
+*.hdf5
 
 # ============================================
 # Logs and Temporary Files
