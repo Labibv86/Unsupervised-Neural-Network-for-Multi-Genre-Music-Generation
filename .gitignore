@@ -1,0 +1,198 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+
+# ============================================
+# Virtual Environment (CRITICAL - large files)
+# ============================================
+venv/
+venv_*/
+.virtualenv/
+.venv/
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.ipynb
+
+# ============================================
+# Data Files (LARGE - DO NOT COMMIT)
+# ============================================
+data/raw_midi/
+data/processed/
+*.mid
+*.MID
+*.midi
+*.npy
+*.npz
+*.json
+
+# ============================================
+# Generated Outputs (DO NOT COMMIT)
+# ============================================
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.pkl
+*.h5
+*.hdf5
+
+# ============================================
+# Logs and Temporary Files
+# ============================================
+logs/
+*.log
+*.tmp
+temp/
+tmp/
+*.crdownload
+*.part
+
+# ============================================
+# Reports and PDFs (Can be committed, but optional)
+# ============================================
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# OS Generated Files
+# ============================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# ============================================
+# Large Files (>100MB) - Safety
+# ============================================
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.iso
+
+# ============================================
+# Testing and Coverage
+# ============================================
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ============================================
+# MyPy
+# ============================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================
+# Project Specific
+# ============================================
+
+# Raw MIDI data (DO NOT COMMIT - too large)
+# Your 50,000 MIDI files should NOT go to GitHub
+data/raw_midi/lmd_matched/
+
+# Processed tokenized data (can be regenerated)
+data/processed/task1/*.npy
+data/processed/task1/tokens/
+
+# Model checkpoints (large files)
+checkpoints/task1_autoencoder/*.pt
+checkpoints/task2_vae/*.pt
+checkpoints/task3_transformer/*.pt
+checkpoints/task4_rlhf/*.pt
+checkpoints/rlhf_finetuned/*.pt
+
+# Generated samples (can be regenerated)
+outputs/task1_samples/*.npy
+outputs/task2_samples/*.npy
+outputs/task3_samples/*.npy
+outputs/rlhf_survey/*.npy
+outputs/rlhf_comparison/*.npy
+outputs/baseline_samples/*.npy
+outputs/figures/
+
+# Evaluation results (optional, but can be committed as JSON)
+# outputs/*.json is small, can keep
+
+# Human survey responses (contains simulated data)
+outputs/rlhf_survey/participant_*.json
+outputs/rlhf_survey/average_ratings.json
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
