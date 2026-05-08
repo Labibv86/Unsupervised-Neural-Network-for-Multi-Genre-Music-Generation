@@ -82,20 +82,7 @@ tmp/
 *.crdownload
 *.part
 
-# ============================================
-# Reports and PDFs (Can be committed, but optional)
-# ============================================
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.synctex.gz
-*.toc
-*.lof
-*.lot
+
 
 # ============================================
 # Environment Variables
