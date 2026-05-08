@@ -1,4 +1,4 @@
-#### CSE425 PROJECT ####
+#### CSE425 PROJECT: Unsupervised Neural Network for Multi-Genre Music Generation ####
 
 
 # Contributions
@@ -6,9 +6,14 @@
 Md. Shihab Sharar(22241028) --> EDA,Task 3,4,Evaluation Metrices 
 Md. Moazzem Hossain Majumder(24241132) --> Preprocessing,Task 1,2 
 
+Project Demonstration Video Link: https://www.youtube.com/watch?v=rCC-FBHo4kA 
+
 dataset--> Lakh MIDI Dataset
 !!!!!!!!!!! Due to size issues in GITHUB we have uploaded the raw and preprocessed data in Google Drive.The whole project structure can also be found there.
 Link: https://drive.google.com/drive/folders/1Ud_ujpi8qtAehqjmfW2TOi7_rf22lgnj?usp=sharing 
+
+
+
 
 
 
