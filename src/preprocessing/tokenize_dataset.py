@@ -77,8 +77,7 @@ def tokenize_midi_file(midi_path):
         for start in range(0, len(token_ids) - SEQ_LEN, STRIDE):
             window = token_ids[start:start + SEQ_LEN]
             windows.append(window)
-            
-            # Limit windows per file to avoid explosion
+
             if len(windows) >= 20:
                 break
         
