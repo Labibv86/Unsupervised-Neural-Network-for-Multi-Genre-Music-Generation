@@ -13,25 +13,26 @@ Link: https://drive.google.com/drive/folders/1Ud_ujpi8qtAehqjmfW2TOi7_rf22lgnj?u
 
 
 Project Structure
+
 music_genesis/
-├── data/
-│   ├── raw_midi     we have placed Lakh MIDI dataset here
-│   └── processed     the preprocessed tokenized outputs are here
-├── src/
-│   ├── preprocessing/    tokenization and preprocessing scripts   
-│   ├── models        Autoencoder,vae,transformer scripts are here
-│   ├── training        these are the model training python files are here
-│   ├── generation       sample generation scripts
-│   ├── evaluation      evaluation scripts of every model
-│   ├── rlhf         reinforcement learning folder containing the mock_reward, reward_funtion, human_survey,fine_tuning scripts
-│   ├── baselines       randomnotgenarator and Markovchain baseline model scripts
-│   
-├── outputs        Generated samples, Evaluation matrices diagrams, plots and midi files.
-├── shortcuts    we have monitored and saved all the model training  and sample generation performances
-├── report           latex report files and PDF
-├── EDA         Explanatory Data Analysis Diagrams      
-├── requirements.txt        the libraries that we have imported to create the local environemt.
-└── README.md
+
+data/raw_midi     we have placed Lakh MIDI dataset here
+data/processed     the preprocessed tokenized outputs are here
+
+src/preprocessing/    tokenization and preprocessing scripts   
+src/models        Autoencoder,vae,transformer scripts are here
+src/training        these are the model training python files are here
+src/generation       sample generation scripts
+src/evaluation      evaluation scripts of every model
+src/rlhf         reinforcement learning folder containing the mock_reward, reward_funtion, human_survey,fine_tuning scripts
+src/baselines       randomnotgenarator and Markovchain baseline model scripts
+   
+outputs        Generated samples, Evaluation matrices diagrams, plots and midi files.
+shortcuts    we have monitored and saved all the model training  and sample generation performances
+report           latex report files and PDF
+EDA         Explanatory Data Analysis Diagrams      
+requirements.txt        the libraries that we have imported to create the local environemt.
+README.md
 
 
 Commands
