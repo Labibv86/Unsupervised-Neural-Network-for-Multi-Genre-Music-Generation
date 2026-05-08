@@ -44,8 +44,8 @@ def main():
 
     # Load data
     print("Loading data...")
-    train_seqs = np.load(DATA_PATH / "train_seqs_fixed.npy")
-    val_seqs = np.load(DATA_PATH / "val_seqs_fixed.npy")
+    train_seqs = np.load(DATA_PATH / "train_seqs_shifted.npy")
+    val_seqs = np.load(DATA_PATH / "val_seqs_shifted.npy")
 
     with open(DATA_PATH / "metadata.json", "r") as f:
         metadata = json.load(f)

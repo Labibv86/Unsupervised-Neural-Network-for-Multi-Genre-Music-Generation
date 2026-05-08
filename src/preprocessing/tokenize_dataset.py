@@ -12,8 +12,8 @@ import numpy as np
 from miditok import REMI, TokenizerConfig
 from miditoolkit import MidiFile
 
-# Configuration - UPDATE THIS TO YOUR PATH
-DATA_PATH = Path("data/raw_midi/lmd_matched")  # Your LMD matched folder
+
+DATA_PATH = Path("data/raw_midi/lmd_matched") 
 OUTPUT_PATH = Path("data/processed/task1")
 SEQ_LEN = 512
 STRIDE = 256
@@ -124,12 +124,12 @@ def main():
         print("  3. Files have .mid or .MID extension")
         return
     
-    # For Task 1, use ALL files (no genre filter)
-    # We'll filter by genre in Task 2
+
+
     midi_files = all_midi_files
     
     # Limit for testing (remove for full dataset)
-    MAX_FILES = 50000  # total 116,189
+    MAX_FILES = 50000  
     if len(midi_files) > MAX_FILES:
         print(f"\n⚠ Limiting to {MAX_FILES} files for initial processing")
         print("  (Remove MAX_FILES limit for full dataset)")
@@ -177,8 +177,8 @@ def main():
     print(f"✓ Validation sequences: {len(val_seqs):,}")
     
     # Save processed data
-    np.save(OUTPUT_PATH / "train_seqs.npy", train_seqs)
-    np.save(OUTPUT_PATH / "val_seqs.npy", val_seqs)
+    np.save(OUTPUT_PATH / "train_seqs_shifted.npy", train_seqs)
+    np.save(OUTPUT_PATH / "val_seqs_shifted.npy", val_seqs)
     
     # Estimate vocabulary size from data
     unique_tokens = len(np.unique(token_sequences))

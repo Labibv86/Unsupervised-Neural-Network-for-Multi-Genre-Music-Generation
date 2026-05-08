@@ -57,7 +57,7 @@ def main():
         param.requires_grad = False
     
     # Load validation data for prompts
-    val_seqs = np.load(DATA_PATH / "val_seqs_fixed.npy")
+    val_seqs = np.load(DATA_PATH / "val_seqs_shifted.npy")
     
     # RLHF hyperparameters
     LEARNING_RATE = 1e-5  # Small LR for fine-tuning

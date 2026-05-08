@@ -39,8 +39,8 @@ def main():
     
     # Load data
     print("Loading data...")
-    train_seqs = np.load(DATA_PATH / "train_seqs_fixed.npy")
-    val_seqs = np.load(DATA_PATH / "val_seqs_fixed.npy")
+    train_seqs = np.load(DATA_PATH / "train_seqs_shifted.npy")
+    val_seqs = np.load(DATA_PATH / "val_seqs_shifted.npy")
     
     # Use shorter sequences for transformer
     train_seqs = train_seqs[:, :CONTEXT_LEN]

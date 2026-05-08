@@ -46,7 +46,7 @@ def generate_survey_samples():
     model.eval()
     
     # Load validation sequences for prompts
-    val_seqs = np.load(DATA_PATH / "val_seqs_fixed.npy")
+    val_seqs = np.load(DATA_PATH / "val_seqs_shifted.npy")
     
     # Generate 20 diverse samples
     print("🎵 Generating 20 samples for human survey...")

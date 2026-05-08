@@ -44,7 +44,7 @@ def main():
         rlhf_loaded = True
     
     # Load validation sequences for prompts
-    val_seqs = np.load(DATA_PATH / "val_seqs_fixed.npy")
+    val_seqs = np.load(DATA_PATH / "val_seqs_shifted.npy")
     
     # Generate 10 comparison pairs
     print("🎵 Generating Before/After comparison samples...")

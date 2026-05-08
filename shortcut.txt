@@ -52,12 +52,20 @@ python src/training/train_autoencoder.py
 
 
 Loading data...
+
+
+
+
 ✓ Vocabulary size: 570
 ✓ Train sequences: (17298, 512)
 ✓ Validation sequences: (1922, 512)
 ✓ Model on: cuda
 
+
+
 🚀 Starting training...
+
+
 
 Epoch 1/15: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 136/136 [00:11<00:00, 12.14it/s]
 Epoch   1 | Train: 6.0896 | Recon: 6.0895 | KL: 0.0112 | Val: 5.3196
@@ -157,6 +165,18 @@ python src/evaluation/t1_eval.py
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 PS E:\425\music_genesis> python src/evaluation/t1_eval.py
 ============================================================
 EVALUATION METRICS - Task 1
@@ -178,6 +198,24 @@ EVALUATION METRICS - Task 1
   • Pitch Similarity (lower = better genre match): 1.1510
   • Rhythm Diversity (higher = more varied): 0.0023
   • Repetition Ratio (lower = less repetitive): 0.9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 📈 Comparison with Random Baseline:
   • Random pitch similarity: ~1.5-2.0 (yours: 1.1510)
