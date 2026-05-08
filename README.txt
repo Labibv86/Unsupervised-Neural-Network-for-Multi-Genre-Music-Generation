@@ -3,7 +3,7 @@
 
 # Contributions
 
-Md. Shihab Sharar(22241028) --> Task 3,4,Evaluation Metrices 
+Md. Shihab Sharar(22241028) --> EDA,Task 3,4,Evaluation Metrices 
 Md. Moazzem Hossain Majumder(24241132) --> Preprocessing,Task 1,2 
 
 dataset--> Lakh MIDI Dataset
