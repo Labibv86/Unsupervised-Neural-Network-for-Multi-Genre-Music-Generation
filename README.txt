@@ -1,8 +1,10 @@
+#### CSE425 PROJECT ####
+
 
 # Contributions
 
-Md. Shihab Sharar(22241028) --> Task 2,3,4,Evaluation Metrices 
-Md. Moazzem Hossain Majumder(24241132) --> Preprocessing, Task 1
+Md. Shihab Sharar(22241028) --> Task 3,4,Evaluation Metrices 
+Md. Moazzem Hossain Majumder(24241132) --> Preprocessing,Task 1,2 
 
 dataset--> Lakh MIDI Dataset
 !!!!!!!!!!! Due to size issues in GITHUB we have uploaded the raw and preprocessed data in Google Drive.The whole project structure can also be found there.
