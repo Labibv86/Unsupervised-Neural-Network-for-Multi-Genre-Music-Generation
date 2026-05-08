@@ -63,7 +63,7 @@ Loading data...
 
 
 
-🚀 Starting training...
+ Starting training...
 
 
 
@@ -115,7 +115,7 @@ python src/generation/generate_music.py
 ✓ Vocabulary size: 570
 ✓ Device: cuda
 
-🎵 Generating 5 music samples...
+ Generating 5 music samples...
 ----------------------------------------
 
 Generating sample 1/5...
@@ -194,7 +194,7 @@ EVALUATION METRICS - Task 1
 | AVERAGE |            1.1510 |            0.0023 |            0.9000 |
 ------------------------------------------------------------
 
-📊 INTERPRETATION:
+ INTERPRETATION:
   • Pitch Similarity (lower = better genre match): 1.1510
   • Rhythm Diversity (higher = more varied): 0.0023
   • Repetition Ratio (lower = less repetitive): 0.9000
@@ -217,7 +217,7 @@ EVALUATION METRICS - Task 1
 
 
 
-📈 Comparison with Random Baseline:
+ Comparison with Random Baseline:
   • Random pitch similarity: ~1.5-2.0 (yours: 1.1510)
   • Random rhythm diversity: ~0.3-0.5 (yours: 0.0023)
   • Random repetition ratio: ~0.6-0.8 (yours: 0.9000)
@@ -247,7 +247,7 @@ Loading data...
 ✓ Latent dimension: 8
 
 ============================================================
-🚀 Training Stable VAE (KL Annealing Enabled)
+ Training Stable VAE (KL Annealing Enabled)
 ============================================================
    Beta warmup: 0.0 → 0.001 over 10 epochs
    Learning rate: 0.0001
@@ -290,7 +290,7 @@ Epoch  14 | Beta: 0.001 | Train: 4.1785 | Recon: 4.1769 | KL: 1.5772 | Val: 4.88
 ✓ Training curves saved to checkpoints\task2_vae/training_curves.png
 
 ============================================================
-📊 TRAINING SUMMARY
+ TRAINING SUMMARY
 ============================================================
 ✓ Final Train Loss: 4.1785
 ✓ Final Val Loss: 4.8803
@@ -310,7 +310,7 @@ Next steps:
 ✓ VAE model loaded
 ✓ Latent dimension: 8
 
-🎵 Generating 8 diverse music samples...
+ Generating 8 diverse music samples...
   ✓ Sample 1/8 generated (unique tokens: 4)
   ✓ Sample 2/8 generated (unique tokens: 3)
   ✓ Sample 3/8 generated (unique tokens: 3)
@@ -331,11 +331,11 @@ Next steps:
   ✓ Interpolation step 7/8 saved
   ✓ Interpolation step 8/8 saved
 
-✅ Task 2 deliverables ready!
+ Task 2 deliverables ready!
    - 8 diverse samples: outputs\task2_samples/vae_sample_*.npy
    - 8 interpolation steps: outputs\task2_samples/interpolation_step_*.npy
 
-📊 Next step: Run evaluation metrics:
+ Next step: Run evaluation metrics:
    python src/evaluation/metrics.py
 (venv) PS E:\425\music_genesis> python src/evaluation/t2_eval.py             
 ✓ Loaded 1922 validation sequences
@@ -344,7 +344,7 @@ Next steps:
 EVALUATION RESULTS
 ============================================================
 
-📊 Task 1 (AE):
+ Task 1 (AE):
 --------------------------------------------------
 Sample               Pitch Sim↓   Rhythm Div↑  Repetition↓ 
 --------------------------------------------------------
@@ -356,7 +356,7 @@ generated_sample_5   1.9483       0.0000       0.5000
 --------------------------------------------------------
 AVERAGE              1.9897       0.0000       0.9000      
 
-📊 Task 2 (VAE):
+ Task 2 (VAE):
 --------------------------------------------------
 Sample               Pitch Sim↓   Rhythm Div↑  Repetition↓ 
 --------------------------------------------------------
@@ -372,10 +372,10 @@ vae_sample_8         2.0000       0.0000       0.1414
 AVERAGE              2.0000       0.0000       0.1469      
 
 ============================================================
-📈 COMPARISON
+ COMPARISON
 ============================================================
-🎵 Rhythm Diversity: 0.0000 → 0.0000 (+0.0%)
-🔄 Repetition Ratio:  0.9000 → 0.1469 (+83.7%)
+ Rhythm Diversity: 0.0000 → 0.0000 (+0.0%)
+ Repetition Ratio:  0.9000 → 0.1469 (+83.7%)
 
 
 
@@ -427,7 +427,7 @@ Loading data...
 ✓ Model on: cuda
 ✓ Model parameters: 4,506,170
 
-🚀 Training Transformer...
+ Training Transformer...
 
 Epoch 1/30: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1082/1082 [00:54<00:00, 19.67it/s]
 Epoch   1 | Train Loss: 2.6668 | Val Loss: 1.9995 | Train PPL: 14.39 | Val PPL: 7.39
@@ -511,20 +511,20 @@ Early stopping at epoch 30
 ✓ Training curves saved
 
 ============================================================
-📊 TRAINING SUMMARY - Task 3 (Transformer)
+ TRAINING SUMMARY - Task 3 (Transformer)
 ============================================================
 ✓ Best Validation Perplexity: 4.23
 ✓ Final Train Loss: 1.0234
 ✓ Final Val Loss: 1.4497
 
-✅ Task 3 training complete!
+ Task 3 training complete!
 
 Next: Generate long compositions
 (venv) PS E:\425\music_genesis> python src/generation/generate_transformer_samples.py
 ✓ Loaded best_model.pt
 ✓ Transformer model loaded
 
-🎵 Generating 10 long compositions (1024 tokens each)...
+ Generating 10 long compositions (1024 tokens each)...
   ✓ Composition 1/10 | Length: 1024 | Has notes: True | Temperature: 1.0
   ✓ Composition 2/10 | Length: 1024 | Has notes: True | Temperature: 1.1
   ✓ Composition 3/10 | Length: 1024 | Has notes: True | Temperature: 1.2
@@ -536,7 +536,7 @@ Next: Generate long compositions
   ✓ Composition 9/10 | Length: 1024 | Has notes: True | Temperature: 1.8
   ✓ Composition 10/10 | Length: 1024 | Has notes: True | Temperature: 1.9
 
-✅ 10 long compositions saved to outputs\task3_samples
+ 10 long compositions saved to outputs\task3_samples
 
 
 
@@ -586,7 +586,7 @@ python src/rlhf/compare_results.py
 ============================================================
 TASK 4: RLHF - Human Survey Preparation
 ============================================================
-🎵 Generating 20 samples for human survey...
+ Generating 20 samples for human survey...
   ✓ Sample 1/20 | Temp: 0.88 | Notes: True
   ✓ Sample 2/20 | Temp: 1.36 | Notes: True
   ✓ Sample 3/20 | Temp: 1.32 | Notes: True
@@ -612,16 +612,17 @@ TASK 4: RLHF - Human Survey Preparation
 ✓ Survey HTML saved to outputs\rlhf_survey\survey_form.html
   Open this file in a browser to collect human ratings
 
-📋 Next Steps:
-1. Open outputs/rlhf_survey/survey_form.html in browser
-2. Have 10+ participants rate the 20 samples
-3. Save each response as JSON file
-4. Run reward_model.py to train on ratings
-(venv) PS E:\425\music_genesis> python src/rlhf/mock_ratings.py
+
+
+
+
+
+
+
 ============================================================
 Generating Mock Human Ratings (RLHF Demonstration)
 ============================================================
-🎵 Generating synthetic human ratings...
+ Generating synthetic human ratings...
 ----------------------------------------
   sample_1: 4.33/5 | Notes: True | Temp: 0.88
   sample_2: 5.00/5 | Notes: True | Temp: 1.36
@@ -648,10 +649,7 @@ Generating Mock Human Ratings (RLHF Demonstration)
 ✓ Average rating: 4.69/5
 ✓ Rating range: 4.2 - 5.0
 
-✅ Mock ratings ready for reward model training!
 
-Next step: python src/rlhf/reward_model.py
-(venv) PS E:\425\music_genesis> python src/rlhf/reward_model.py
 ============================================================
 Training Reward Model from Human Feedback
 ============================================================
@@ -660,7 +658,7 @@ Training Reward Model from Human Feedback
 ✓ Training data: 20 samples, max length: 502
   Rating distribution: min=4.2, max=5.0, mean=4.69
 
-🚀 Training Reward Model...
+ Training Reward Model...
 Epoch 1/50: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00,  6.02it/s]
 Epoch 2/50: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 292.50it/s]
 Epoch 3/50: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 293.59it/s]
@@ -724,7 +722,7 @@ Epoch 50 | Train Loss: 0.3907 | Val Loss: 0.1060
 RLHF Fine-tuning of Transformer
 ============================================================
 
-🚀 Fine-tuning with RLHF...
+ Fine-tuning with RLHF...
 
 --- RLHF Iteration 1/10 ---
   Average reward: 4.537 (scale 1-5)
@@ -759,11 +757,9 @@ RLHF Fine-tuning of Transformer
 ✓ RLHF fine-tuned model saved to checkpoints\rlhf_finetuned
 ✓ Progress plot saved
 
-✅ RLHF Fine-tuning Complete!
 
-📊 Next: Compare before/after samples
 (venv) PS E:\425\music_genesis> python src/rlhf/compare_results.py
-🎵 Generating Before/After comparison samples...
+ Generating Before/After comparison samples...
   ✓ Comparison 1/10 | Original notes: True | RLHF notes: True
   ✓ Comparison 2/10 | Original notes: True | RLHF notes: True
   ✓ Comparison 3/10 | Original notes: True | RLHF notes: True
@@ -775,13 +771,7 @@ RLHF Fine-tuning of Transformer
   ✓ Comparison 9/10 | Original notes: True | RLHF notes: True
   ✓ Comparison 10/10 | Original notes: True | RLHF notes: True
 
-✅ Comparison samples saved to outputs\rlhf_comparison
 
-📊 Task 4 deliverables ready:
-   - Human survey with 10+ participants
-   - Reward model trained
-   - RLHF fine-tuned model
-   - 10 before/after comparison samples
 
 
 
